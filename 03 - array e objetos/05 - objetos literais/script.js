@@ -1,8 +1,8 @@
 let x;
 
 const pessoa = {
-    nome: 'Ângela Aguiar',
-    idade: '2',
+    nome: 'José Inácio',
+    idade: '32',
     isAdmin: true,
     endereco: {
         rua: 'Rua Dos Bobos',

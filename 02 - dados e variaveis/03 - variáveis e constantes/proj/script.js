@@ -38,10 +38,13 @@ console.log(arr);
 const person = {
     nome: 'Rodrigo', 
 };
+console.log(person)
 
-person.nome = 'Angela',
+person.nome = 'Angela';
+console.log(person.nome);
 
-person.email = 'rodrigo@gmail.com',
+person.email = 'rodrigo@gmail.com';
+console.log(person.email);
 
 console.log(person);
 

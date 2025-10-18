@@ -1,17 +1,16 @@
 let x;
 
-const frutas = ["banana", "goiaba", "jabuticaba", "melancia"];
+const frutas = ["banana", "goiaba", "jabuticaba", "melancia", "graviola"];
 console.log('array: ', frutas)
-
-const deVerao = ["uva", "manga", "amendoa", "maçã"];
+const deVerao = ["uva", "manga", "maçã"];
 frutas.push(deVerao);
-console.log('array com o arry de frutas de verão inseridos: ', frutas)
+console.log('array com o array de frutas de verão inseridos: ', frutas);
 
 x = frutas[4];
 console.log('elemento na posição 4, que na verdade é um array dentro do array: ', x);
 
-x = frutas[4][1];
-console.log('elemento na posição 4.1, que é o segundo elemento dentro do sub array ', x);
+x = frutas[2][1];
+console.log('elemento na posição 2.1, que é o segundo elemento dentro do sub array: ', x);
 
 const todasFrutas = [frutas, deVerao];
 x = todasFrutas;
@@ -52,4 +51,4 @@ console.log('"Array of", cria uma um array através de dados informados: ', x);
 
 
 //global e funcao escopo
-alert("caraio!");
+//alert("caraio!");

@@ -3,14 +3,14 @@ let x;
 const todo = new Object();
 
 todo.id = 1;
-todo.nome = 'Ângela Aguiar';
+todo.nome = 'José Inácio';
 todo.completo = false;
 
 x = todo;
 
 const pessoa = {
     endereco: {
-        rua: 'Dr. Barros Júnior',
+        rua: 'Dr. Barros Filho',
         numero: '1911'
     }
 }
@@ -22,28 +22,34 @@ const obj2 = { c: 3, d: 4 };
 
 const obj3 = { obj1, obj2 };
 x = obj3;
+console.log(x);
 
 //diferente de
 
 const obj4 = { ...obj1, ...obj2 };
 x = obj4;
+console.log(x);
 
 const obj5 = Object.assign({}, obj1, obj2);
+x = obj5;
+console.log('Objeto 5: ',x);
+
+//arrays de objetos
 
 const todos = [
     {
         id: 1,
-        nome: 'Adriana da Silva Aguiar Costa'
+        nome: 'José Inácio'
         
     },
     {
         id: 2,
-        nome: 'Rodrigo Júlio Costa'
+        nome: 'Inácio José'
         
     },
     {
         id: 3,
-        nome: 'Ângela Aguiar Costa'
+        nome: 'José Silva'
     }
 ];
 

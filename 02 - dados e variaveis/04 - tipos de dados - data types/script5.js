@@ -17,12 +17,22 @@ console.log(z);
 
 //Propriedades e métodos da String
 
+console.log('Propriedades e métodos da String');
+
 const s = new String('Ólá mundo!');
 x = typeof s;
+console.log('\n',x);
+
 x = s.length;
+console.log('\ntamanho do objeto x, quantos elementos há nele: ',x);
+
 x = [1];
+console.log('\n', x);
+
 x = s.__proto__;
 x = nome.substring(0, 3);
+console.log('\n', x);
+
 let a = 'Cachorro';
 x = a.slice(-3);
 let eu = 'Rodrigo Júlio';

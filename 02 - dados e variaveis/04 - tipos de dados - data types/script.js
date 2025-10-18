@@ -8,8 +8,9 @@ console.log();
 
 //Number
 
-const idade = 42;
+const idade = 3;
 const temperatura = 25;
+console.log(idade, typeof idade);
 
 //boolean
 
@@ -24,7 +25,6 @@ console.log(filho, typeof filho)
 //Symbol
 const id = Symbol('id');
 const saida = id;
-
 console.log(saida, typeof saida);
 
 //BigInt
