@@ -25,7 +25,7 @@ output = child.parentElement;
 child.parentNode.style.backgroundColor = '#c3c3c3c3';
 child.parentElement.style.padding = '10px';
 
-//siblings
+//siblings - irmãos
 const segundoItem = document.querySelector('.child:nth-child(2)');
 
 output = segundoItem.nextSibling;

@@ -1,40 +1,35 @@
-//document.getElementById()
+//querySelectorAll
 
-console.log(document.getElementById('app-title'));
-console.log(document.querySelector('app-title').id);
-console.log(document.querySelector('app-title').className);
-console.log(document.querySelector('app-title').getAttribute('id'));
+const listItems = document.querySelectorAll('.item');
+console.log(listItems[1].innerText); // Acessa o segundo item da lista
 
-//atribuir
+listItems.style.color = 'red'; // Não funciona, pois listItems é uma NodeList
 
-document.getElementById('app-title').title = 'Novo título';
-document.getElementById('app-title').setAttribute('class', 'title');
+listItems.forEach((item) => {
+    item.style.color = 'red'; // Funciona, altera a cor de cada item para vermelho
+    
+    if (index === 1) {
+        item.remove(); // Remove o segundo item da lista
+    };
 
-const title = document.getElementById('app-title');
-console.log(title);
-console.log(title.textContent);
+    if (index === 0) {
+        item.innerText = 'Primeiro Item Alterado'; // Altera o texto do primeiro item
+    };
+});
 
-//obter/mudar conteúdo
+const listItems2 = document.getElementClassName('item'); // Retorna uma HTMLCollection
+console.log(listItems2[2].innerText); // Exibe a HTMLCollection no console
 
-title.textContent = 'Olá mundo!';
-title.innerText = 'Olá mundo novamente!';
-title.innerHTML = '<strong>Olá mundo!</strong>';
-title.style.borderRadius = '10px';
+listItems2.forEach((item) => {
+    console.log(item.innerText); // Não funciona, HTMLCollection não tem forEach
+});
 
-//document.querySelector();
+const listItemsArray = Array.from(listItems2); // Converte HTMLCollection em Array
+listItemsArray.forEach((item) => {
+    console.log(item.innerText); // Agora funciona, pois é um array
+});
 
-console.log(document.querySelector('h1'));
-console.log(document.querySelector('#app-title'));
-console.log(document.querySelector('.container'));
-console.log(document.querySelector('input[type="text"]'));
-console.log(document.querySelector('li:nth-child(2)').innerText);
+const listItems3 = document.getElementsByTagName('item'); // Retorna uma HTMLCollection
+console.log(listItems3[0].innerText); // Exibe o primeiro item da HTMLCollection    
 
-const segundoItem = document.querySelector('li:nth-child(2)');
-segundoItem.innerText = 'Novo texto';
-segundoItem.style.color = 'red';    
 
-//usar esses métodos em outros elementos
-
-const list = document.querySelector('ul');
-console.log(list);
-const primeiroItem = list.querySelector('li');

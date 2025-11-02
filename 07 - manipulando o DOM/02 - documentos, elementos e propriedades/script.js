@@ -1,6 +1,5 @@
 let output;
 
-
 output = document.all;
 output = document.all[7];// Pega o elemento na posição 7
 output = document.all.length; // Pega o tamanho do array
