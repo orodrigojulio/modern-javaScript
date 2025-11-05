@@ -17,8 +17,23 @@ function removeItem(itemNumero) {
     ul.removeChild(li);
 }
 
+function removeItem2(itemNumero) {
+    const ul = document.querySelector('ul');
+    const li = document.querySelector(li)[0];
 
+    ul.removeChild(li);
+}
+
+
+function removeItem3(itemNumero) {
+    const ul = document.querySelector('ul');
+    const li = document.querySelectorAll('li')[itemNumero - 1].remove();
+
+}
+
+const removeItem4 = (itemNumero) => document.querySelectorAll('li')[itemNumero - 1].remove();
 
 removeElement();
 removerPrimeiroElemento();
 removeItem(2);
+removeItem2(1);

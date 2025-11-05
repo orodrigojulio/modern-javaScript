@@ -1,4 +1,4 @@
-const text = document.querySelector('h1');
+const text = document.querySelector('p');
 const itemList = document.querySelector('.item-list');
 const items = itemList.querySelectorAll('li');
 
