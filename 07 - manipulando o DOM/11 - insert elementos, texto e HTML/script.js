@@ -13,7 +13,6 @@ function insertText() {
     const item = document.querySelector('li:first-child');
 
     item.insertAdjacentText('afterend', 'insertAdjacentElement');
-
     
 }
 
