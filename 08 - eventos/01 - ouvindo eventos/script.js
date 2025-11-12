@@ -15,11 +15,13 @@ limpar.onclick = function () {
 limpar.onclick = function () {
 console.log("Clicou no botão limpar!");
     
-//addEventListener 
+//addEventListener() 
 limpar.addEventListener('click', alert('Limpar itens!!!'));    
-    
 */
 
-limpar.addEventListener('click', oncClick());
+limpar.addEventListener('click', onClick);
+ 
+// setTimeout(() => limpar.removeEventListener('click', onClick), 5000);
 
-//setTimeout(() => limpar.click(), 5000);
+
+setTimeout(() => limpar.click(), 5000);

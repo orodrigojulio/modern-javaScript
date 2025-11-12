@@ -15,7 +15,7 @@ function showKeyCode(e) {
     insert.innerHTML = `Tecla pressionada: <strong>${e.key}<strong> <br>
     Código da tecla: <strong>${e.keyCode}</strong> <br>
     Código do caractere: <strong>${e.which}</strong> <br>`;
-}
+
 
     const keyCodes = {
         'é.key': e.key === ? 'Space' : e.key,

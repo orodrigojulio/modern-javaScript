@@ -18,3 +18,4 @@ document.body.addEventListener('click', () => {
     alert('Você clicou no body!');
     div.style.backgroundColor = 'green';
 });
+
